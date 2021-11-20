@@ -40,7 +40,7 @@ input,select,button
 @media all and (max-width:480px) {
     form>div,button
 {
-    margin: 3   px;
+    margin: 3px;
 }
 form>div:not(#domains)>input,#other1
 {
@@ -48,11 +48,11 @@ form>div:not(#domains)>input,#other1
 }
 form>div>label
 {
-    font-size: 13px;
+    font-size: 16px;
 }
 input,select,button
 {
-    font-size: 10px;
+    font-size: 12px;
     font-family: font1,sans-serif;
 }
 #name1
