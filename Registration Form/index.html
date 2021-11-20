@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>REGISTRATION FORM</h1>
+    </header>
+    <form id="form">
+        <div>
+            <label for="name">Name</label> <br>
+            <div class="split">
+                <input id="name1" type="text" placeholder="First name" required>
+                <input id="name2" type="text" placeholder="Last name" required>
+            </div>
+        </div>
+        <div>
+            <label for="reg-no">Registartion Number</label> <br>
+            <input type="text" id="reg-no" placeholder="University Redg. No." required>
+        </div>
+        <div>
+            <label for="tel">Phone Number</label> <br>
+            <input type="tel" placeholder="123 456 7890" id="tel" required>
+            <p id="numberCheck" style="color:red"></p>
+        </div>
+        <div >
+            <label for="email">Email</label> <br>
+            <input id="email" type="email" placeholder="xyz@mail.com" required>
+        </div>
+        <div>
+            <label for="date">Date of birth</label> <br>
+            <input id="date" type="date" min="1990-1-1" max="2005-1-1" required>
+        </div>
+        <div class="form-div">
+            <label for="branch">Branch</label> <br>
+            <select name="branch" id="branch">
+                <option value="me">Mechanical Engineering</option> 
+                <option value="ce">Civil Engineering</option>
+                <option value="ee">Electrical Engineering</option>
+                <option value="eee">Electrical and Electronics Engineering</option>
+                <option value="cse">Computer Science and Engineering</option>
+                <option value="etc">Electronics and Telecommunication Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="che">Chemical Engineering</option>
+                <option value="pe">Production Engineering</option>
+                <option value="other-branches">Other</option>
+            </select> <br>
+            <input id="other1" type="text" placeholder="Other course(if any)">
+        </div>
+        <div id="domains">
+            <label for="domains">Interested Domains</label> <br>
+            <label for="web">Web Development</label> <input id="web" type="checkbox"> <br>
+            <label for="app">App Development</label> <input id="app" type="checkbox"> <br>
+            <label for="game">Game Development</label> <input id="game" type="checkbox"><br>
+            <label for="cybersecurity">Cybersecurity</label> <input id="cybersecurity" type="checkbox"><br>
+            <label for="arvr">Augmented and Virtual Reality</label> <input id="arvr" type="checkbox"><br>
+            <label for="other-domains">Others</label>
+            <input class="other-domains" id="other2" type="text" placeholder="Other domains(if any)">
+        </div>
+        <div>
+            <label for="facebook">Facebook</label> <br>
+            <input id="facebook" placeholder="Profile link" type="url"> <br>
+
+            <label for="instagram">Instagram</label> <br>
+            <input id="instagram" placeholder="Profile link" type="url"> <br>
+
+            <label for="whatsapp">Whatsapp Number</label> <br>
+            <input id="whatsapp" placeholder="123 456 7890" type="tel" required> <br>
+            <p id="wpNumberCheck" style="color:red"></p>
+
+            <label for="github">GitHub</label> <br>
+            <input id="github" placeholder="Profile link" type="url"> <br>
+        </div>
+        <button type="submit" onclick="save()">Submit</button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

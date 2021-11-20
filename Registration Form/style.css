@@ -1,0 +1,67 @@
+@font-face
+{
+    font-family: font1;
+    src: url(Fonts/Sony_Sketch_EF.ttf);
+}
+body
+{
+    padding: 10px;
+    background-color: #b2b2b2;
+    font-family: font1,sans-serif;
+    text-align: center;
+}
+#name1
+{
+    width:178px;
+}
+#name2
+{
+    width:170px;
+}
+form>div,button
+{
+    margin: 10px;
+}
+form>div:not(#domains)>input,#other1
+{
+    width: 360px;
+}
+form>div>label
+{
+    font-size: 22px;
+}
+input,select,button
+{
+    font-size: 18px;
+    font-family: font1,sans-serif;
+}
+
+
+@media all and (max-width:480px) {
+    form>div,button
+{
+    margin: 3   px;
+}
+form>div:not(#domains)>input,#other1
+{
+    width: 200px;
+}
+form>div>label
+{
+    font-size: 13px;
+}
+input,select,button
+{
+    font-size: 10px;
+    font-family: font1,sans-serif;
+}
+#name1
+{
+    width: 95px;
+}
+#name2
+{
+    width:95px;
+}
+
+}
