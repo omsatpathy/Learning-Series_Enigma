@@ -44,7 +44,7 @@ input,select,button
 }
 form>div:not(#domains)>input,#other1
 {
-    width: 200px;
+    width: 206px;
 }
 form>div>label
 {
